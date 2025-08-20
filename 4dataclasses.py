@@ -9,4 +9,4 @@ class Note:
     created_at: datetime
 
 n = Note(1, "My First Note", "This is the content of my first note.", datetime.now())
-print(n)
+print(n.created_at)
