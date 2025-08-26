@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 rows = []
 
-with Path('../data-list.csv').open(newline="",encoding='utf-8') as file:
+with Path('../data-list.csv').open(newline="", encoding='utf-8') as file:
     reader = csv.DictReader(file)
     for row in reader:
         rows.append({
