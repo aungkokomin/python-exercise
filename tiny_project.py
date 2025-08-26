@@ -1,10 +1,9 @@
 import requests, json
 from pathlib import Path
 
-
 class FetchRepos:
     @staticmethod
-    def fetch_repos(self):
+    def fetch_repos() -> list[dict]:
         user = "octocat"
         url = f"https://api.github.com/users/{user}/repos"
         r = requests.get(url, timeout=15)
