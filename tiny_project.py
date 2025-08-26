@@ -3,6 +3,7 @@ from pathlib import Path
 
 
 class FetchRepos:
+    @staticmethod
     def fetch_repos(self):
         user = "octocat"
         url = f"https://api.github.com/users/{user}/repos"
