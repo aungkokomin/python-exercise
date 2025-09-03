@@ -8,7 +8,7 @@ class TestFetchRepos(unittest.TestCase):
         fetcher = FetchRepos()
         data = fetcher.fetch_repos()
         self.assertIsInstance(data, list)
-        self.assertGreater(len(data), 0)
+        self.assertGreater(len(data), 0) #
         for repo in data:
             self.assertIn("name", repo)  # Check if 'name key exists
             self.assertIn("stars", repo)  # Check if 'stars' key exists
