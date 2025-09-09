@@ -1,6 +1,7 @@
 import argparse, json, sys
 from addTask import add_task
 from listTasks import list_tasks
+from checkTask import complete_check_task
 from pathlib import Path
 
 
