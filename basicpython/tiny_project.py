@@ -11,7 +11,6 @@ class FetchRepos:
         repos = r.json()
         return [{"name": x["name"], "stars": x["stargazers_count"]} for x in repos]
 
-
 if __name__ == "__main__":
     fetcher = FetchRepos()
     data = fetcher.fetch_repos()
